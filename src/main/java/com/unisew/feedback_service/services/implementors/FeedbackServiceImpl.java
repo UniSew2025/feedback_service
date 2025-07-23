@@ -77,7 +77,7 @@ public class FeedbackServiceImpl implements FeedbackService {
                 .content(request.getContent())
                 .rating(request.getRating())
                 .creationDate(LocalDate.now())
-                .isReport(request.isReport())
+                .report(request.isReport())
                 .build();
 
         Feedback savedFeedback = feedbackRepo.save(feedback);
